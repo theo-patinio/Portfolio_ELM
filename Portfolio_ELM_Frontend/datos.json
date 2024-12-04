@@ -1,0 +1,39 @@
+{
+  "exp": [
+    {
+      "imagen": "https://www.frikaropalinda.com.ar/wp-content/uploads/2020/04/logo-frikanegro-e1591549798726-87x63.png",
+      "img_link": "https://frika.com.ar",
+      "Description": "Realizacion de pagina web con e-commerce. Diseño de arquitectura, incluyendo SEO y Pixel de Facebook para relacionar el e-commerce con las redes sociales de la empresa.Mantenimiento y actualizaciones de productos, precios, cambios de temporada."
+    },
+    {
+      "imagen": "./img/wiki.png",
+      "img_link": "https://www.wikipedia.com",
+      "Description": "Clon de pagina principal de Wikipedia. Trabajo practico para aplicar primeros conocimientos en HTML, CSS, y JavaScript."
+    },
+    {
+      "imagen": "https://www.globant.com/themes/custom/globant_corp_theme/images/2019/globant-logo-dark.svg",
+      "img_link": "https://www.globant.com/",
+      "Description": "Debo confesar que nunca trabajé en esta compania, pero me encantaría. Se que tengo los conocimientos y Habilidades necesarios y gran capacidad de trabajo en equipo.  Espero su llamado !"
+    }
+  ],
+
+
+
+  "estudios_list": [
+    {
+      "icon": "./img/ENET_17.jpg",
+      "icon_link": "https://frika.com.ar",
+      "Description":"Escuela de Educación Técnica Nro 17 Cornelio Saavedra. Floresta - Buenos Aires - Argentina. Orientacion construccion. Titulo obtenido Maestro Mayor de Obras."
+    },
+    {
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Platzi.jpg/1200px-Platzi.jpg",
+      "icon_link": "https://frika.com.ar",
+      "Description": "Platzi es una plataforma latinoamericana de educación en línea.​ Fue fundada en 2014 por el ingeniero colombiano Freddy Vega y por el informático guatemalteco Christian Van Der Henst. "
+    },
+    {
+      "icon": "https://media-exp1.licdn.com/dms/image/C560BAQGv-Dd7A2pQ0g/company-logo_200_200/0/1646458288684?e=2147483647&v=beta&t=2bEkW38L80hsKUeV4gucwORSlBcJNmYd5H6CBz_Z00E",
+      "icon_link": "https://frika.com.ar",
+      "Description": "Argentina Programa es un programa para acceder a capacitaciones gratuitas en tres áreas: programación, testing y habilidades digitales."
+    }
+  ]
+}

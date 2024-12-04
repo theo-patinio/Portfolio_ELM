@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELM Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <main data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" class="scrollspy " tabindex="0"
+    data-bs-offset="0">
+
+    <header class="fixed-top ">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark saraza  ">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="#">
+            <img src="./img/APLogo-20-20.png" alt="Logo de AP" class="logo_AP">
+          </a>
+          <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+
+          <div class="collapse navbar-collapse nav_text" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a class="nav-link " aria-current="page" href="#exp">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#edu">Educación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#skills">Habilidades</a>
+              </li>
+
+            </ul>
+            <button type="button" class="btn btn-outline-dark btn-lg p-3 m-4" data-bs-toggle="modal"
+              data-bs-target="#login">
+              Login
+            </button>
+
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Formulario Login (Modal) -->
+
+
+    <div class="modal fade " id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content form-login">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Login</h3>
+            <button  type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-5">
+            <form>
+              <div class="mb-3 ">
+                <label for="username" class="form-label">Nombre de usuario</label>
+                <input type="username" class="form-control" id="username" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <button id="btn_login" type="submit" class="btn btn-primary fs-5">Entrar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ----------ACA COMIENZA EL CAROUSEL------------ -->
+
+    <div id="carousel" class="carousel slide " data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner ">
+        <div>
+          <div class="carousel-item active banner">
+            <img src="./img/LIg4I.png" class="d-block w-100 " alt="VScode image">
+          </div>
+          <div class="carousel-item img_carusel banner">
+            <img src="./img/JavaScript.jpg" class="d-block w-100 " alt="JavaScript image">
+          </div>
+        </div>
+        <div class="overlay p-0 container_soy_yo  ">
+          <div class="row align-items-center  ">
+            <div class="col  px-0 ">
+              <img src="./img/My project.png" class="soy_yo" alt="yo_mismo">
+            </div>
+            <div class="col text-center">
+              <h1>RaRo</h1>
+              <h3>Soluciones Web</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------ACA COMIENZA info cabecera------------ -->
+
+    <div class="container-fluid info">
+      <div class="row info_personal">
+        <div class="col ">
+          <div class="card info_personal">
+            <div class="card-body ">
+              <h1 class="card-title">ENRIQUE MANGIALAVORI</h1>
+              <p class="card-text fs-5">Full Stack Developer Jr.<br>Diseño web<br> E-commerce.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card text-end  info_personal">
+            <div class="card-body ">
+
+              <h3 class="card-title">Contacto</h3>
+              <a class="fa-solid fa-pen-to-square fa-xl " id="btn_edit_contact"></a>
+
+              <p class="card-text ">
+                <a class="fs-5" href="mailto:theo@frika.com.ar" target="_blank" rel="noopener noreferrer"
+                  id="mail">Mail: theo@frika.com.ar</a><br>
+                <a class="fs-5" href="#" id="telefono">Telefono/WS: +54 011 5866-5752</a><br>
+                <a class="fs-5" href="https://www.instagram.com/theo.patinio/" target="_blank" rel="noopener noreferrer"
+                  id="instagram">IG: @theo.patinio</a>
+              </p>
+
+              <div class="contact_edit">
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text" id="basic-addon1">Mail</span>
+                  <input type="text" class="form-control" placeholder="Nuevo Mail" aria-label="Username"
+                    aria-describedby="basic-addon1" id="new_mail">
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text" id="basic-addon1">Telefono</span>
+                  <input type="text" class="form-control" placeholder="Nuevo telefono" aria-label="Username"
+                    aria-describedby="basic-addon1" id="new_telefono">
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text" id="basic-addon1">IG</span>
+                  <input type="text" class="form-control" placeholder="Instagram" aria-label="Username"
+                    aria-describedby="basic-addon1" id="new_instagram">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Enviar" id="btn_enviar_contact">
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------MAIN------------ -->
+    <div>
+      <!-- ----------ACA COMIENZA Acerca de...----------- -->
+
+      <div id="contenedor_acerca" class="container-fluid p-5  fs-4">
+
+        <div class="row  p-3 exp">
+          <div class="col text-center ">
+            <a class="fa-solid fa-pen-to-square fa-mb " id="btn_edit_acerca"></a>
+            <h1>ACERCA DE...</h1>
+          </div>
+          <span id="acerca_text">Aca va quien soy yo, una breve descripcion de mi persona, mis habilidades y
+            virtudes</span>
+
+
+          <div class="input-group-lg acerca_edit">
+            <span class="input-group-text">Editar Info</span>
+
+            <textarea class="form-control " aria-label="With textarea" id="new_text"></textarea>
+
+            <input class="btn btn-primary" type="submit" value="Enviar" id="btn_enviar_text">
+          </div>
+        </div>
+
+
+      </div>
+      <!-- ----------ACA COMIENZA experiencia------------ -->
+      <div id="exp" class="container-fluid p-5 experiencia fs-4">
+
+        <div class="row  p-3 exp ">
+          <div class="col text-center ">
+            <h1>EXPERIENCIA</h1>
+          </div>
+        <div class="exp_main "> </div>
+
+      </div>
+
+      <!-- ----------ACA COMIENZA estudios------------ -->
+
+      <div id="edu" class="container-fluid p-5 estudios fs-4">
+
+        <div class="row  p-3 contenedor_estudios ">
+          <div class="col text-center ">
+            <h1>ESTUDIOS</h1>
+          </div>
+        </div>
+        <div class="edu_main "> </div>
+
+      </div>
+
+      <!-- ----------ACA COMIENZA Hard & Soft Skills------------ -->
+
+      <div id="skills" class="container-fluid p-5 ">
+        <div class="row  p-3 exp ">
+          <div class="col text-center " id="relojitos">
+            <h1>HABILIDADES</h1>
+          </div>
+        </div>
+
+
+        <div class="row p-5 ">
+
+
+          <div class="col-6 col-md-3 offset-md-2 pastillas">
+            <div class="box">
+              <div id="HTML" class="chart" data-percent="90"></div>
+              <h2>HTML</h2>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-md-3 offset-md-2 pastillas">
+            <div class="box">
+              <div class="chart" data-percent="60"></div>
+              <h2>CSS</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-5">
+          <div class="col-6 col-md-3   pastillas">
+            <div class="box">
+              <div class="chart" data-percent="75"></div>
+              <h2>WORDPRESS</h2>
+            </div>
+          </div>
+          <div class="d-none d-md-block  col-md-2 offset-md-2  pastillas">
+            <div>
+              <div class="box">
+                <img src="./img/cerebro.png" alt="un cerebro" class="cerebro">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 offset-md-2  pastillas">
+            <div class="box">
+              <div class="chart" data-percent="30"></div>
+              <h2>JAVASCRIPT</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-5">
+          <div class="col-6 col-md-3 offset-md-2  pastillas">
+            <div class="box">
+              <div class="chart" data-percent="50"></div>
+              <h2>SEO</h2>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 offset-md-2  pastillas">
+            <div class="box">
+              <div class="chart" data-percent="10"></div>
+              <h2>PHP</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- ----------ACA COMIENZA EL FOOTER------------ -->
+
+      <footer>
+        <div class="container-fluid P-0 saraza">
+          <div class="row text-center  ">
+            <div class="col-12 col-md p-2 ">
+              <a href="">footer abc</a>
+            </div>
+            <div class="col-12 col-md p-2 ">
+              <a href="">footer abcfff</a>
+            </div>
+            <div class="col-12 col-md p-2 ">
+              <a href="">footer abjhdkfdsfc</a>
+            </div>
+            <div class="col-12 col-md p-2 ">
+              <a href="">footer abchh</a>
+            </div>
+            <div class="col-12 col-md p-2 ">
+              <a href="">footer hjfdhfas</a>
+            </div>
+          </div>
+      </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+    <script src="./Compilado/estudios.js"></script>
+    <script src="./Compilado/link_menu.js"></script>
+    <script src="./Compilado/relojitos.js"></script>
+    <script src="./Compilado/experiencia.js"></script>    
+    <script src="./Compilado/edits.js"></script>
+
+    <script src="https://kit.fontawesome.com/0d244d67bf.js" crossorigin="anonymous"></script>
+
+    
+
+    
+ 
+
+  </main>
+</body>
+
+</html>
